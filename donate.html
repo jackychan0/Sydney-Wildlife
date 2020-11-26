@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+     <!-- Header -->
+	<header>
+	<h1 class="headertext"> <a class="a2" href="index.html"> Sydney Wildlife </a> </h1>
+    <!-- Navigation side bar -->
+      <div id="mySidenav" class="sidenav">
+       <h2> <a href="index.html"> Sydney Wildlife </a></h2>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="carer.html">Become A Carer</a>
+  <a href="aboutus.html">About Sydney Wildlife</a>
+  <a href="mailing.html">Mailing List</a>
+  <a href="donate.html">Donate Now</a>
+</div>
+<div id="main">
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+</div>
+  </header>
+
+ <!-- Section 1 Photo Slideshow-->
+  <section class ="one">
+  
+    
+        <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <h1> Thank you for considering to donate! </h1>
+    <img class= "cover"  src="Images/koalaimage1.jpg" frameborder="0">
+        </img>
+	<div class="text">	We are a not-for-profit organisation operated entirely by volunteers. This means all our funds go directly towards helping the animals we rescue and not to pay salaries and their associated costs. We receive no government financial assistance and so must rely on our own fund-raising efforts – and YOU – to continue our work with sick, injured and orphaned native wildlife. </div>
+ 
+</div>
+
+
+  <div class="mySlides fade">
+    <h1> To donate we need a little information </h1>
+     <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    <br>
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <br>
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+   <br>
+   <br>
+    <p>  Note: Sydney Wildlife respects your privacy and
+
+																			          does not share your details with any third 
+
+																				  party. We will, however, use your email address
+																				  to provide you with our quarterly newsletter, to
+
+																				  which you can unsubscribe at any time.
+    </p>
+  </div>
+
+  <div class="mySlides fade">
+   <h1> We also need this information </h1>
+    <label for="fname">Home phone</label>
+    <input type="text" id="hphone" name="homephone" placeholder="Home phone number..">
+    <br>
+    <label for="lname">Mailing Address</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your mailing address..">
+    <br>
+    <label for="state">State</label>
+    <select id="state" name="state">
+      <option value="NSW">NSW</option>
+      <option value="QLD">QLD</option>
+      <option value="WA">WA</option>
+      <option value="SA">SA</option>
+      <option value="TAS">TAS</option>
+      <option value="VIC">VIC</option>
+    </select>
+  </div>
+   <div class="mySlides fade">
+     <h1> Thank you for coming this far, to complete: </h1>
+   
+     <label for="fname">Amount</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Comments</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+       <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+       </select>
+      
+      <br>
+      <button class="button" onclick="currentSlide(4)"> Donate </button>
+       
+
+      </div>
+
+      <div class="mySlides fade">
+          <h1> Thank you for donating! </h1>
+          <p> Thank you for contributing to a great cause, we aim to to continue our work with sick, injured and orphaned native wildlife, creating a better life for all animals. You are amazing! 
+        <button class="button"> <a href="index.html">Back to home </a></button>
+       </div>
+      
+      
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+
+  </section> 
+
+  <section class= "two">
+  <h1 class ="header2">Rescue Hotline <br>
+    0294134300
+  </h1>
+  </section>
+  <footer>
+  <h2 class ="header2"> Our sponsors </h2>
+
+ 
+
+ <img class ="dot1" src="Images/novel.JPG" frameborder="0">
+ <img class ="dot2" src="Images/frankie.JPG" frameborder="0">
+ <h3 class ="headercontact"> Contact us </h3> 
+ <h3 class ="headercontacttext">  info@sydneywildlife.org.au <br> sponsorship@sydneywildlife.org.au </h3>
+  <h3 class ="header3"> <a class ="a1" href="aboutus.html"> About us  |</a> <a> Links  |</a> <a> Privacy  policy </a>     </h3> 
+  
+  </footer>
+
+
+  <body>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,352 @@
+/* Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+html {
+	scroll-behavior: smooth;
+ 
+}
+body {
+  font-family: Arial, sans-serif;
+	font-size: 1.5em;
+}
+
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+a {
+   
+   text-decoration: none;
+   color: white;
+}
+
+.a1 {
+     text-decoration: none;
+   color: white;
+   margin-bottom: 0;
+}
+
+.a2 {
+     padding-left: 10%;
+     position: relative;
+     
+}
+
+a:hover 
+{
+     color:#d8f3dc;
+     text-decoration:none; 
+     cursor:pointer;  
+}
+
+
+
+header {
+	grid-area: header;
+	background: #081c15;
+	color: white;
+  padding-top: 5%;
+
+}
+
+
+.header2 {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+}
+
+.header3 {
+  text-align: left; 
+  font-size: 15px;
+}
+.headercontact {
+  text-align: right; 
+  font-size: 30px;
+  color:white;
+  margin-bottom:;
+  margin-right: 3%;
+}
+.headercontacttext {
+  text-align: right; 
+  font-size: 20px;
+  color:white;
+  margin-right: 3%;
+}
+
+
+
+
+ .one {
+   color:white;
+ position: relative;
+ text-align: center;
+ background-image: url("Images/background2.jpg");
+
+  padding:5%;
+ object-position: center;
+ height: 150%;
+ }
+
+ .two {
+   position: relative;
+
+height: 100%;
+  background: #52b788;
+  padding: 5%
+ }
+
+
+footer {
+  background-color: black;
+  padding: 50px;
+  padding-bottom: 100px;
+  color:black;
+  height: 110%;
+
+
+}
+
+/* Navigation
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Nav foundation retrieved from https://www.w3schools.com/howto/howto_js_sidenav.asp */
+/* was edited and personalised */
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #1b4332; 
+  border-radius: 25px;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #d8f3dc;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+  
+
+
+/* Slideshow
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Slideshow foundation retrieved from https://www.w3schools.com/howto/howto_js_slideshow.asp */
+/* was edited and personalised */
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+
+
+}
+
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.685);
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left:0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.918);
+}
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+/* Caption text */
+.text {
+  color: white;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #4CAF50;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.active, .dot:hover {
+  background-color: #1b4332;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.cover {
+width: 1000px;
+height: 600px;
+top: 10%;
+background: url(.jpg), #C4C4C4;
+border-radius: 50px;
+object-position: center; 
+ object-fit: cover;
+} 
+.cover2 {
+width: 800px;
+height: 600px;
+top: 20%;
+border-radius: 50px;
+object-position: right; 
+ object-fit: cover;
+ left: 20%;
+} 
+.coverfig {
+  
+  text-align: center;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  background-color: white;
+
+  text-shadow: 3px 2px black;
+
+}
+
+/* Buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 35px;
+  border-radius: 12px;
+  position: relative;
+  padding: 20px 24px;
+  bottom: -150px;
+}
+.button:hover {
+  background-color: rgb(23, 77, 25); 
+}
+.dot1 {
+  /* Ellipse 5 */
+
+position: absolute;
+width: 90px;
+height: 90px;
+border-radius: 50%;
+background: #C4C4C4;
+left: 43%;
+border-color:#1b4332;
+padding: 10px;
+margin-bottom: 20px;
+}
+
+.dot2 {
+  position: absolute;
+width: 90px;
+height: 90px;
+border-radius: 50%;
+background: #C4C4C4;
+left: 53%;
+border-color:#1b4332;
+padding: 10px;
+margin-bottom: 20px;
+}
+
+label {
+font-size: 30px;
+}
+input[type=text] {
+  background-color: #3CBC8D;
+  color: white;
+}
+select {
+    background-color: #3CBC8D;
+  color: white;
+}
