@@ -3,9 +3,13 @@
 
   
   <head>
+     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
+    <title>Mailing List</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
      <!-- Header -->
@@ -28,36 +32,43 @@
 
  <!-- Section 1 Photo Slideshow-->
   <section class ="one">
-    <h1> Subscribe to our mailing list! </h1>
-    
+
         <!-- Slideshow container -->
 <div class="slideshow-container">
 
   <!-- Full-width images with number and caption text -->
   <div class="mySlides fade">
-
-    <img class= "cover"  src="Images/koalaimage1.jpg" frameborder="0">
-        </img>
-	<div class="text">	Find out more about Sydney Wildlife</div>
-   
-   <button class="button"> <a href="aboutus.html">About Sydney Wildlife </a></button>
+    <h1> Subscribe to our mailing list! </h1>
+    
+    <p> Want to know of everything thats happening at Sydney Wildlife?
+      <br>
+      Sign up to our mailing list today and you will be notified via email of upcoming events, news, and any other relavent information related to Sydney Wildlife </p>
+   <div>  <img class= "cover"  src="Images/reptile1.jpg" frameborder="0"> 
+   </div>
+  </a></button>
 </div>
 
 
   <div class="mySlides fade">
-
-  <img class= "cover"  src="Images/reptile1.jpg" frameborder="0">
-        </img>
-
-	  <div class="text">	Being a carer takes alot of dedication and consistency, do you have what it takes?</div>
-    <button class="button">Become a carer </button>
+<h1> Please fill out the form below </h1>
+<label for="fname">Full Name</label>
+    <input type="text" id="fname" name="fullname" placeholder="Your full name..">
+    <br>
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="Your email..">
+  <p> Marketing permissions </p>
+  <input type="checkbox" id="Newsletter" name="newsletter" value="news">
+  <label for="Newsletter"> Newsletter</label><br>
+  <input type="checkbox" id="Directmail" name="direct mail" value="mail">
+  <label for="Directmail"> Direct Mail</label><br>
+  <input type="submit" value="Submit">
   </div>
 
   <div class="mySlides fade">
-  
-    <img class= "cover"  src="Images/reptile1.jpg" frameborder="0">
-    <div class="text">Caption Three</div>
-    <button class="button">Donate</button>
+  <h1> Thank you for subscribing </h1>
+
+  <p> Stay tuned and check your inbox to be constantly updated as to whats been happening over here in Sydney Wildlife </p>
+   <button class="button"> <a href="index.html">Back to home </a></button>
   </div>
 
   <!-- Next and previous buttons -->
@@ -89,7 +100,8 @@
  <img class ="dot1" src="Images/novel.JPG" frameborder="0">
  <img class ="dot2" src="Images/frankie.JPG" frameborder="0">
  <h3 class ="headercontact"> Contact us </h3> 
- <h3 class ="headercontacttext">  info@sydneywildlife.org.au <br> sponsorship@sydneywildlife.org.au </h3>
+ <h3 class ="headercontacttext">  info@sydneywildlife.org.au <br> sponsorship@sydneywildlife.org.au <br>
+ <a href="https://www.facebook.com/sydneywildlife.smws"> Facebook </a> </h3>
   <h3 class ="header3"> <a class ="a1" href="aboutus.html"> About us  |</a> <a> Links  |</a> <a> Privacy  policy </a>     </h3> 
   
   </footer>

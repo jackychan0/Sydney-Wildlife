@@ -60,14 +60,14 @@ header {
 }
 .headercontact {
   text-align: right; 
-  font-size: 30px;
+  font-size: 60%;
   color:white;
   margin-bottom:;
   margin-right: 3%;
 }
 .headercontacttext {
   text-align: right; 
-  font-size: 20px;
+  font-size: 55%;
   color:white;
   margin-right: 3%;
 }
@@ -80,16 +80,18 @@ header {
  position: relative;
  text-align: center;
  background-image: url("Images/background2.jpg");
-
-  padding:5%;
+ padding-bottom: 15%;
+ padding-top: 5%;
  object-position: center;
- height: 150%;
+ height:  max-content;
  }
 
  .two {
    position: relative;
 
+
 height: 100%;
+ margin-top: auto;
   background: #52b788;
   padding: 5%
  }
@@ -133,6 +135,9 @@ footer {
   color: #d8f3dc;
   display: block;
   transition: 0.3s;
+  background-color:#4CAF50;
+  border-radius: 25px;
+  margin:10px;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -215,6 +220,7 @@ footer {
 }
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
+ 
 }
 /* Caption text */
 .text {
@@ -265,22 +271,20 @@ footer {
 
 .cover {
 width: 1000px;
-height: 600px;
+max-width:100%;
+height:500px;
+
 top: 10%;
 background: url(.jpg), #C4C4C4;
 border-radius: 50px;
 object-position: center; 
- object-fit: cover;
+object-fit: cover;
+position: relative;
+
 } 
-.cover2 {
-width: 800px;
-height: 600px;
-top: 20%;
-border-radius: 50px;
-object-position: right; 
- object-fit: cover;
- left: 20%;
-} 
+
+
+
 .coverfig {
   
   text-align: center;
@@ -308,7 +312,7 @@ object-position: right;
   border-radius: 12px;
   position: relative;
   padding: 20px 24px;
-  bottom: -150px;
+  top: 150px;
 }
 .button:hover {
   background-color: rgb(23, 77, 25); 
@@ -316,27 +320,32 @@ object-position: right;
 .dot1 {
   /* Ellipse 5 */
 
-position: absolute;
-width: 90px;
-height: 90px;
+position: relative;
+width: 10%;
+height: 10%;
 border-radius: 50%;
 background: #C4C4C4;
-left: 43%;
+left: 37%;
 border-color:#1b4332;
 padding: 10px;
 margin-bottom: 20px;
+max-width:100% 
+object-position: center;
 }
 
 .dot2 {
-  position: absolute;
-width: 90px;
-height: 90px;
+  position: relative;
+width: 10%;
+height: 10%;
 border-radius: 50%;
 background: #C4C4C4;
-left: 53%;
+object-position: center;
 border-color:#1b4332;
 padding: 10px;
 margin-bottom: 20px;
+max-width:100% ;
+left: 39%;
+
 }
 
 label {
